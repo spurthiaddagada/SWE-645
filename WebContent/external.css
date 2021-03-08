@@ -1,0 +1,221 @@
+@charset "ISO-8859-1";
+
+/* 
+  Spurthi Addagada
+  G01238358
+*/
+
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #F0F0F0;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* 
+   Custom style class -Universal selector that can be used for any element on the page 
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*for class row at head*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+.row1{
+    max-width: 650px;
+    margin: 0 auto 0 auto;
+    color:black;
+}
+.row2{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+    color:black;
+}
+
+/*for elements at the top of page*/
+.main-nav{
+    float: right;
+    list-style: none; 
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: gold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+.main-nav1{
+    float: right;
+    list-style: none; 
+    margin-top: 55px;
+}
+
+.main-nav1 li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav1 li a:link,
+.main-nav1 li a:visited{
+    padding: 8px 0;
+    color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 140%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav1 li a:hover,
+.main-nav1 li a:active{
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    height: auto;
+    
+    left:0;
+    width: 150px;
+    float: left;
+    margin-top: 20px;
+}
+.hetb {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: gold;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('GMUVBG.JPG');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('pic1.JPG');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section{
+    padding: 80px 0;
+}
+
+.sec-design long-copy {
+    margin-bottom: 30px;
+}
+
+/*styles for table th and td elements*/
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+#t01 {
+  width: 70%;    
+  background-color: #FFCC33;
+}
+#t02 {
+  width: 80%;    
+  background-color: #FFCC33;
+}
+#t03 {
+  width: 60%;    
+  background-color: #FFCC33;
+}
+#t04 {
+  width: 90%;    
+  background-color: #FFCC33;
+}
+#About{
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('pic1.JPG');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/*also h1 is GMU green*/
+/*heading at the top of the page should be inside a rectangular box with a solid border in GMU green (#006633) and 5px width. The box should use a box-shadow of your styling choice*/
+h1 {
+    color: #006633;
+    text-shadow: 2px 2px 2px dimgrey;
+    border: 5px solid #006633;
+    width: 1500px;
+    text-align: center;
+
+}
+.pic img
+{
+
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 20%;
+  height: auto;
+}
+/* for the logo to stay afixed*/
+div.fixed{
+position: fixed;
+bottom:0;
+right:0;
+width:250px;
+}
+
+/*color for ol*/
+
+ol.a {
+  
+  color:#006633;
+}

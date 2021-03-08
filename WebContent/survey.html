@@ -1,0 +1,226 @@
+<!-- 
+   Spurthi Addagada
+   Survey link- hw 1
+   -->
+<!DOCTYPE html>
+<head>
+   <title>Survey Link</title>
+   <meta charset="utf-8" />
+   <link rel='stylesheet' type="text/css" href="external.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+</head>
+<body>
+   <div class="w3-container">
+      <nav>
+         <div class='row2'>
+            <div class="fixed">
+               <img src="mason-logo.png" alt='George Mason University Logo' class='logo'>
+            </div>
+            <ul class='main-nav1'>
+              
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <section id="survey">
+         <!--h1 elements in GMU Green-->
+         <!--	heading at the top of the page should be inside a rectangular box with a solid border in GMU green (#006633) and 5px width. The box should use a box-shadow of your styling choice-->
+         <h1>CS Department Student Survey</h1>
+         <p> <em>Please provide us feedback and help us get better!!</em>
+         </p>
+         <form autocomplete="on" action=" " method="post">
+            <!	This web page should contain a form with text boxes using appropriate input types for the
+            user name, street address, city, state, zip, telephone number, e-mail, URL, and date of
+            survey!>
+            <!--The <fieldset> tag is used to group related elements in a form.
+               The <fieldset> tag draws a box around the related elements. -->
+            <!--The <legend> tag is used to define a caption for the <fieldset> element. -->
+            <!--
+               required attribute for fields as appropriate that forces the user to enter or select a value before submitting the form.
+               • Visually indicate to the user which fields are required------------used *-->
+            <fieldset>
+               <legend>Personal Information :</legend>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>FirstName *</label>
+                     <br>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <!--autofocus for first field-->
+                     <input type="text" id="firstname" name="firstname" required autofocus/>
+                     <br>
+                  </div>
+               </div>
+               <br>
+			   <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>LastName *</label>
+                     <br>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <!--autofocus for first field-->
+                     <input type="text" id="lastname" name="lastname" required />
+                     <br>
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Street Address *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <input id="address" type="text" required />
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>City *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <input id="city" type="text" required />
+                  </div>
+               </div>
+               </br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>State *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <input id="state" type="text" required  />
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Zip *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <!--Type=number-->
+                     <input id="zip" type="text" pattern="^\d{5}(?:[-\s]\d{4})?$"  required />
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Telephone Number *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <!--Type=tel-->
+                     <input id="telephone" type="text" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="(xxx) xxx-xxxx" required >
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Email*</label>
+                  </div>
+                  <!--Type=email-->
+                  <div class="w3-col m2 l2 w3">
+                     <input id="email" type="text" required placeholder="username@host.com"  required />
+                  </div>
+               </div>
+               
+    
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Date of Survey *</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <!--Type=date-->
+                     <input id="date" type="text" required  />
+                  </div>
+               </div>
+               <br>
+          
+      
+            </fieldset>
+            <fieldset>
+               <legend>Feedback</legend>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>What did you like the most about GMU? </label>
+                  </div>
+                  <!--check boxes and can be activated by clicking on the respective labels-->
+                  <div class="w3-col m2 l6 w3">
+                     <input id="22" type="checkbox" value="1" name="question1">
+                     <label for="22">Students</label>
+                     <input id="23" type="checkbox" value="2" name="question1">
+                     <label for="23">Location</label>
+                     <input id="24" type="checkbox" value="3" name="question1">
+                     <label for="24">Campus</label>
+                     <input id="25" type="checkbox" value="4" name="question1">
+                     <label for="25">Atmosphere</label>
+                     <input id="26" type="checkbox" value="5" name="question1">
+                     <label for="26">Dorm Rooms</label>
+                     <input id="27" type="checkbox" value="6" name="question1">
+                     <label for="27">Sports</label>
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>What interested you the most in GMU? </label>
+                  </div>
+                  <!--radio buttons and can be activated by clicking on the respective labels-->
+                  <div class="w3-col m2 l6 w3">
+                     <input id="9" type="radio" value="1" name="question2">
+                     <label for="9">Friends</label>
+                     <input id="50" type="radio" value="2" name="question2">
+                     <label for="50">Television</label>
+                     <input id="3" type="radio" value="3" name="question2">
+                     <label for="3">Internet</label>
+                     <input id="35" type="radio" value="4" name="question2">
+                     <label for="35">Other</label>
+                  </div>
+               </div>
+               <br>
+			   <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Raffle</label>
+                  </div>
+                  <div class="w3-col m2 l6 w3">
+                    <input id="raffle" type="text"  placeholder="10 numbers comma separated"/>
+                            
+                                <label id="errormessage" ></label>
+                  </div>
+               </div>
+			   <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>Additional Comments</label>
+                  </div>
+                  <div class="w3-col m2 l2 w3">
+                     <textarea name="other" rows="4"></textarea>
+                     </td>
+                  </div>
+               </div>
+               <br>
+               <div class="w3-row">
+                  <div class="w3-col m2 l2 w3">
+                     <label>How likey are you to recommend GMU to other prospective students? </label>
+                  </div>
+                  <div class="w3-col m2 l6 w3">
+                     <!--dropdown list of options-->
+                     <select id="1" required>
+                        <option value="">Select</option>
+                        <option value="0">Very Likely</option>
+                        <option value="1">Likely</option>
+                        <option value="2">Unlikely</option>
+                     </select>
+                  </div>
+               </div>
+               <br>
+            </fieldset>
+            <br/>
+            <input type="submit" value="Submit" />
+			<input type="button" value="Cancel" />
+         </form>
+      </section>
+   </div>
+   <footer>
+   </footer>
+</body>
+</html>
