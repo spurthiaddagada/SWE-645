@@ -48,6 +48,8 @@ node {
             //sh "cd prod;git diff ; git add . ;  git push https://${GIT_USERNAME}:${encodedPassword}@github.com/manishjangid/swe645_project.git"
             ssh "echo $SSH_KEY"
             sh 'GIT_SSH_COMMAND="ssh -i $SSH_KEY" git push origin main'
-        }
+         }
+      }
+    }
     }
 }
